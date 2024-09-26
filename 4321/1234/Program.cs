@@ -1,37 +1,48 @@
-﻿using System;
+using System;
 
 class Program
 {
     static void Main()
     {
-        Console.Write("Введите число: ");
-        int number = int.Parse(Console.ReadLine());
-        Console.Write("Введите количество разрядов для сдвига: ");
-        int shift = int.Parse(Console.ReadLine());
-        Console.Write("Введите направление сдвига (1 - влево, 2 - вправо): ");
-        int direction = int.Parse(Console.ReadLine());
+        int maxLength = 0; 
+        int currentLength = 1; 
+        int startIndex = -1; 
+        int maxStartIndex = -1; 
+        Console.WriteLine("Введите 15 целых чисел:");
 
-        string numberStr = number.ToString();
-        int length = numberStr.Length;
+        int previousNumber = int.Parse(Console.ReadLine());
+        startIndex = 1; 
 
-        shift %= length; // Обеспечиваем, что сдвиг не превышает длину числа
-
-        string result = "";
-
-        if (direction == 1)
+        for (int i = 2; i <= 15; i++)
         {
-            result = numberStr.Substring(shift) + numberStr.Substring(0, shift);
-        }
-        else if (direction == 2)
-        {
-            result = numberStr.Substring(length - shift) + numberStr.Substring(0, length - shift);
-        }
-        else
-        {
-            Console.WriteLine("Некорректное направление сдвига.");
-            return;
+            int currentNumber = int.Parse(Console.ReadLine());
+
+            if (currentNumber >= previousNumber) 
+            {
+                currentLength++;
+            }
+            else 
+            {
+                if (currentLength > maxLength)
+                {
+                    maxLength = currentLength;
+                    maxStartIndex = startIndex;
+                }
+                currentLength = 1;
+                startIndex = i; 
+            }
+
+            previousNumber = currentNumber; 
         }
 
-        Console.WriteLine("Результат сдвига: " + result);
+       
+        if (currentLength > maxLength)
+        {
+            maxLength = currentLength;
+            maxStartIndex = startIndex;
+        }
+
+        Console.WriteLine($"Максимальная длина цепочки: {maxLength}");
+        Console.WriteLine($"Порядковый номер числа, с которого началась цепочка: {maxStartIndex}");
     }
 }
