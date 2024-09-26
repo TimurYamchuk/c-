@@ -1,0 +1,15 @@
+/Users/timuryamchuk/Desktop/4321/4321/bin/Debug/net6.0/4321
+/Users/timuryamchuk/Desktop/4321/4321/bin/Debug/net6.0/4321.deps.json
+/Users/timuryamchuk/Desktop/4321/4321/bin/Debug/net6.0/4321.runtimeconfig.json
+/Users/timuryamchuk/Desktop/4321/4321/bin/Debug/net6.0/4321.dll
+/Users/timuryamchuk/Desktop/4321/4321/bin/Debug/net6.0/4321.pdb
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.csproj.AssemblyReference.cache
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.GeneratedMSBuildEditorConfig.editorconfig
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.AssemblyInfoInputs.cache
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.AssemblyInfo.cs
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.csproj.CoreCompileInputs.cache
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.dll
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/refint/4321.dll
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.pdb
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/4321.genruntimeconfig.cache
+/Users/timuryamchuk/Desktop/4321/4321/obj/Debug/net6.0/ref/4321.dll
